@@ -7,7 +7,7 @@ import { setTextFilter } from './actions/filters'
 import getVisibleExpenses from './selectors/expenses'
 import {Provider} from 'react-redux'
 import 'react-dates/lib/css/_datepicker.css'
-//import './styles/styles.css' 
+import './styles/style.css' 
 
 const store = configureStore();
 // store.dispatch(addExpense({description: 'Water Bill', amount:4500, note: 'bill'}));

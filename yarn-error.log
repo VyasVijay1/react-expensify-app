@@ -1,5 +1,5 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Users\ervvi\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add react-test-renderer@16.0.0
+  C:\Program Files\nodejs\node.exe C:\Users\ervvi\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add extract-text-webpack-plugin@3.0.0
 
 PATH: 
   C:\Program Files\Microsoft MPI\Bin\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\nodejs\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Git\cmd;C:\Users\ervvi\AppData\Local\Programs\Python\Python37-32\Scripts\;C:\Users\ervvi\AppData\Local\Programs\Python\Python37-32\;C:\Users\ervvi\AppData\Local\Microsoft\WindowsApps;;C:\Users\ervvi\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\ervvi\AppData\Roaming\npm;C:\Users\ervvi\.dotnet\tools;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps
@@ -14,7 +14,7 @@ Platform:
   win32 x64
 
 Trace: 
-  Error: EPERM: operation not permitted, unlink 'D:\Projects\React\Udemy\react-course-project\indecision-app1\node_modules\.invariant.MODULES\.bin'
+  Error: EPERM: operation not permitted, unlink 'D:\Projects\React\Udemy\react-course-project\indecision-app1\node_modules\function.prototype.name\node_modules\es-abstract'
 
 npm manifest: 
   {
@@ -26,9 +26,14 @@ npm manifest:
       "babel-preset-env": "^1.5.2",
       "babel-preset-react": "^6.24.1",
       "css-loader": "^3.2.0",
+      "enzyme": "^3.0.0",
+      "enzyme-adapter-react-16": "^1.0.0",
+      "enzyme-to-json": "^3.0.1",
+      "extract-text-webpack-plugin": "^3.0.0",
       "live-server": "^1.2.1",
       "moment": "^2.24.0",
       "node-sass": "4.13.0",
+      "raf": "^3.3.2",
       "react": "^16.12.0",
       "react-addons-shallow-compare": "15.6.0",
       "react-dates": "12.7.0",
@@ -37,6 +42,7 @@ npm manifest:
       "react-redux": "5.0.5",
       "react-router": "^5.1.2",
       "react-router-dom": "^5.1.2",
+      "react-test-renderer": "^16.0.0",
       "redux": "3.7.2",
       "sass-loader": "8.0.0",
       "style-loader": "0.18.2",
@@ -52,9 +58,10 @@ npm manifest:
     "license": "MIT",
     "scripts": {
       "server": "live-server public/",
-      "build": "webpack",
+      "build:dev": "webpack",
+      "build:prod": "webpack -p --env production",
       "dev-server": "webpack-dev-server",
-      "test": "Jest"
+      "test": "Jest --config=jest.config.json"
     },
     "devDependencies": {
       "jest": "^20.0.4",
