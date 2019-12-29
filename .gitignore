@@ -3,3 +3,8 @@ public/bundle.js
 public/bundle.js.map
 public/stlye.css
 public/stlye.css.map
+public/bundle.js
+public/bundle.js.map
+public/stlye.css
+public/dist/
+yarn.lock
